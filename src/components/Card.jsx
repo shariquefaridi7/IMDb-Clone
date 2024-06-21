@@ -11,6 +11,7 @@ const Card = ({ result }) => {
                 <Link href={`movie/${result.id}`}>
                     <Image
                         src={`https:image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
+                         alt="movie_image"
                         width={500}
                         height={300}
                         className="sm:rounded-t-lg"
