@@ -1,6 +1,7 @@
 
 import Link from "next/link";
-import { FiThumbsUp } from 'react-icons/fi'
+import { FiThumbsUp } from 'react-icons/fi';
+import Image from "next/image";
 
 
 const Card = ({ result }) => {
@@ -8,7 +9,7 @@ const Card = ({ result }) => {
         <>
             <div className=" group sm:shadow-md sm:hover:shadow-slate-500 sm:rounded-lg sm:border-slate-400 sm:m-2 sm:transition-shadow duration-300 ">
                 <Link href={`movie/${result.id}`}>
-                    <img
+                    <Image
                         src={`https:image.tmdb.org/t/p/original/${result.backdrop_path || result.poster_path}`}
                         width={500}
                         height={300}
