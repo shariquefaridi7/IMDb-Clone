@@ -1,5 +1,5 @@
 import axios from "axios"
-import Image from "next/image";
+
 
 
 const Id = async ({ params }) => {
@@ -10,7 +10,7 @@ const Id = async ({ params }) => {
     return (
         <div className="w-full">
             <div className="p-4 md:pt-8 flex flex-col md:flex-row content-center max-w-6xl mx-auto md:space-x-6">
-                <Image
+                <img
                     src={`https:image.tmdb.org/t/p/original/${data.backdrop_path || data.poster_path}`}
                     width={500}
                     height={300}
