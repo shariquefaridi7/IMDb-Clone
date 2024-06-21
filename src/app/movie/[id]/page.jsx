@@ -16,6 +16,7 @@ const Id = async ({ params }) => {
                     height={300}
                     className="rounded-lg"
                     style={{ maxWidth: '100%', height: '100%' }}
+                     alt="movie_image"
 
                 />
                 <div className="p-2">
