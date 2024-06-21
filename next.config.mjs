@@ -4,7 +4,8 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: '**',
+                hostname: 'https://imdb-sepia-ten.vercel.app/',
+             pathname:'image.tmdb.org'
 
             }
         ]
